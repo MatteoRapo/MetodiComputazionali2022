@@ -1,0 +1,6 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import scipy as sc
+mydata= pd.read_csv('vel_vs_time.csv')
+mydatax

@@ -1,0 +1,6 @@
+import pandas as pd
+import numpy as np
+import matplot.pyplot as plt
+
+dati=pd.read_csv('oscilloscope.csv')
+print(dati)

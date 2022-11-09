@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy import integrate
+xx=np.arange(-5,5.05,0.1)
+yy=0.6*xx**6
+def Periodo(x0):
+    zz=1/(np.sqrt(yy[x0]-yy))
+    T=np.sqrt(8)*integrate.simpson(zz[:x0],xx[:x0])
+    return T
+periodi=np.zeros(len(xx))
+for i in range(1,len(xx)):
+    periodi[i]=Periodo[i]
+
+plt.plot(xx,periodi)
+plt.show()
