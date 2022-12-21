@@ -1,0 +1,6 @@
+import somme
+
+risultato=somme.somma(10)
+print (risultato)
+risultati=somme.sommasqrt(10)
+print (risultato)
